@@ -1,0 +1,40 @@
+<!-- 第一部分  轮播图
+	属性	类型	默认值	必填	说明
+	indicator-dots	boolean	false	否	是否显示面板指示点	
+	autoplay	boolean	false	否	是否自动切换
+	interval	number	5000	否	自动切换时间间隔
+	duration	number	500	否	滑动动画时长
+	circular	boolean	false	否	是否采用衔接滑动
+-->
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true">
+  <block wx:for="{{bannerData}}" wx:key="*this">
+    <swiper-item>
+    	<!--item.imageurl获取图片对象中的图片名称-->
+      <image src="{{item.imageurl}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 第二部分 导航菜单 navData -->
+<view class="nav">
+  <view class="navItem" wx:for="{{navData}}" wx:key="*this">
+    <image src="{{item.imageurl}}"></image>
+    <view>{{item.imagetitle}}</view>
+  </view>
+</view>
+
+<!-- 第三部分  产品部分 -->
+<view class="pros">
+   <view class="proItem" wx:for="{{proData}}" wx:key="*this">
+      <image src="{{item.image.imageurl}}"></image>
+      <view class="proInfo">
+        <view>
+          <view class="proname">{{item.proname}}</view>
+          <view class="proprice">价格：{{item.proprice}}</view>
+          <view class="proexplain">{{item.proexplain}}</view>
+        </view>
+        <view class="proBtn">预约</view>
+      </view>
+   </view>
+
+</view>
