@@ -1,0 +1,5 @@
+
+<view class="wapper">
+  <image src="/img/1.png"></image>
+  <button style="width:70%" bindtap="getUserProfile">授权登录</button>
+</view>
