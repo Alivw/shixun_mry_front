@@ -3,7 +3,9 @@
     "pages/start/start",
     "pages/index/index",
     "pages/technician/technician",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/register/register",
+    "pages/login/login"
   ],
   "tabBar": {
     "selectedColor": "#d24a58",

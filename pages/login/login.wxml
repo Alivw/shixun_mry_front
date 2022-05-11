@@ -1,0 +1,6 @@
+<view class="wapper">
+  <form catchsubmit="formSubmit">
+    <view class="formItem"> <text>手机号：</text> <input type="number" name="phone" placeholder="请输入手机号"></input> </view>
+    <view class="formItem"> <text>密 码：</text> <input type="password" name="password" placeholder="请输入密码"></input> </view> <button formType="submit" style="width:80%" class="btn">立即登录</button>
+  </form>
+</view>

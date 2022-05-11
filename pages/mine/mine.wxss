@@ -1,1 +1,29 @@
-/* pages/mine/mine.wxss */
+.top image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+
+.top {
+  border-top: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  padding-top: 40rpx;
+  align-items: center;
+}
+
+.nickName {
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.fontColor {
+  color: #999;
+}
+
+.register,
+.login {
+  color: blue;
+  margin-left: 20rpx;
+}

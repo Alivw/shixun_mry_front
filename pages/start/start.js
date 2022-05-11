@@ -13,10 +13,10 @@ Page({
     wx.getUserProfile({
       desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
       success: (res) => {
-        console.log("用户信息：",res.userInfo);
+        console.log("用户信息：", res.userInfo);
         wx.setStorage({
-          key:"userInfo",
-          data:res.userInfo
+          key: "userInfo",
+          data: res.userInfo
         })
         //跳转到首页
         wx.switchTab({
@@ -30,7 +30,16 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    //获取本地缓存是否已经有user信息 如果有，那么直接跳转到首页 
+    wx.getStorage({
+      key: 'userInfo',
+      success(res) {
+        //跳转到首页 
+        wx.switchTab({
+          url: '/pages/index/index'
+        })
+      }
+    })
   },
 
   /**
