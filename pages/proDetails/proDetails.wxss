@@ -1,0 +1,41 @@
+image {
+  width: 100%;
+}
+
+.proInfo {
+  padding: 0 20rpx;
+  margin-top: 40rpx;
+  border-bottom: 1px solid #999;
+  padding-bottom: 20rpx;
+}
+
+.proname {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
+.proprice {
+  font-weight: bold;
+  color: orange;
+  margin-left: 60rpx;
+
+  font-size: 36rpx;
+}
+
+.proexplain {
+  color: #999;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.prostep {
+  padding: 0 20rpx;
+  margin-top: 40rpx;
+}
+
+.btn {
+  background-color: orange;
+  font-weight: bold;
+  color: #fff;
+  margin: 30rpx 0;
+}

@@ -164,7 +164,7 @@ Page({
       url: that.data.httpUrl + 'project/fatch', //发送请求
       data: {
         "pageNo": currentPage,
-        "pageSize":pageSize
+        "pageSize": pageSize
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -172,7 +172,7 @@ Page({
       success(res) {
         console.log("获取项目信息", res.data)
         if (res.data.code == 200) { //说明请求成功，把返回的数据，设置给data
-          
+
           if (res.data.data && res.data.data.length > 0) {
             console.log("请求成功", res.data)
             currentPage++
@@ -201,4 +201,11 @@ Page({
       }
     })
   },
+  toProDetails: function (e) { //console.log(e) 
+    //console.log(e.currentTarget.dataset.id) 
+    //跳转到项目的详情页面。并携带当前项目的id 
+    wx.navigateTo({
+      url: '/pages/proDetails/proDetails?id=' + e.currentTarget.dataset.id,
+    })
+  }
 })

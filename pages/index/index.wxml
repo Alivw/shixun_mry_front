@@ -25,7 +25,7 @@
 
 <!-- 第三部分  产品部分 -->
 <view class="pros">
-   <view class="proItem" wx:for="{{proData}}" wx:key="*this">
+   <view bindtap="toProDetails" data-id="{{item.id}}" class="proItem" wx:for="{{proData}}" wx:key="*this">
       <image src="{{item.image.imageurl}}"></image>
       <view class="proInfo">
         <view>

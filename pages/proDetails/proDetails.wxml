@@ -1,0 +1,9 @@
+<!-- 第一部分 图片 -->
+<image src="{{httpImageUrl+proInfo.image.imageurl}}"></image> <!-- 第二部分 -->
+<view class="proInfo">
+  <view> <text class="proname">{{proInfo.proname}}</text> <text class="proprice">价格：{{proInfo.proprice}}</text> </view>
+  <view class="proexplain">{{proInfo.proexplain}}</view>
+</view> <!-- 第三部分 -->
+<view class="prostep">
+  <view class="proname">详情描述</view> <text> {{proInfo.prostep}} </text>
+</view> <!-- 第四部分 --> <button class="btn" style="width:80%">立即预定</button>
