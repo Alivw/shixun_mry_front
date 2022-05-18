@@ -1,2 +1,10 @@
-<!--pages/technician/technician.wxml-->
-<text>pages/technician/technician.wxml</text>
+<scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="lower">
+  <view class="tec">
+    <!-- 每一个对象 -->
+    <view class="tecInfo" wx:for="{{tecData}}" wx:key="*this" bindtap="toTecDetails" data-id="{{item.id}}" >
+      <view style="font-weight:bold">{{item.techname}}</view>
+      <view class="techexplain">{{item.techexplain}}</view>
+      <image src="{{item.imageurl}}"></image>
+    </view>
+  </view>
+</scroll-view>

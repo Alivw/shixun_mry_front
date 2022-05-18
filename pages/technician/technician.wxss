@@ -1,1 +1,21 @@
-/* pages/technician/technician.wxss */
+page {
+  height: 100%;
+}
+
+.tec {
+  padding: 20rpx;
+}
+
+.tec image {
+  width: 100%;
+}
+
+.tecInfo {
+  border: 1px solid orange;
+  box-shadow: 2px 2px 2px orange;
+  margin-top: 20rpx;
+}
+
+.techexplain {
+  color: #999;
+}

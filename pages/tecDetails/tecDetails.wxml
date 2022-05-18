@@ -1,0 +1,15 @@
+<view class="wapper">
+  <view class="tecInfo">
+    <image src="{{tecInfo.imageurl}}"></image>
+    <view class="techname">{{tecInfo.techname}}</view>
+    <view class="techexplain">{{tecInfo.techexplain}}</view>
+  </view>
+  <view class="techname">【服务内容】</view>
+  <view class="proList">
+    <view class="proItem" wx:for="{{tecInfo.projects}}">
+      <view style="width:70%">{{item.proname}}</view>
+      <view style="width:10%">{{item.proprice}}</view>
+      <view bindtap="toOrder" data-id="{{item.id}}" class="tecBtn">预约</view>
+    </view>
+  </view>
+</view>
