@@ -33,7 +33,12 @@ Page({
       }
     })
   },
-
+  toOrder: function (e) { //通过,e.currentTarget.dataset.id取出传递的参数id console.log("点击立即悦动",e.currentTarget.dataset.id) 
+    //跳转到项目的详情页面，发送项目id
+    wx.navigateTo({
+      url: '/pages/order/order?id=' + e.currentTarget.dataset.id,
+    })
+  },
   /**
    * Lifecycle function--Called when page is initially rendered
    */

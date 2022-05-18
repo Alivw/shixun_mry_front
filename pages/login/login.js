@@ -37,7 +37,10 @@ Page({
             success: function (result) {
               console.log(result.data) 
               if (result.data.code == 200) {
-
+                wx.setStorage({
+                  key:"token",
+                  data: result.data.data
+                })
               } else {
                 //显示错误信息 
                 wx.showToast({

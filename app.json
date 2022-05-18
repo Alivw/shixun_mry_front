@@ -6,7 +6,8 @@
     "pages/mine/mine",
     "pages/register/register",
     "pages/login/login",
-    "pages/proDetails/proDetails"
+    "pages/proDetails/proDetails",
+    "pages/order/order"
   ],
   "tabBar": {
     "selectedColor": "#d24a58",
